@@ -55,6 +55,7 @@ class File {
   clearInputFile() {
     getElement_ById("fileCsv").value = "";
     this.file = null;
+    this.data = [];
     this.editMsgLabel("Escoler arqivo", null);
     scroolTo("teste-2");
   }
