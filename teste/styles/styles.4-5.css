@@ -1,0 +1,45 @@
+/* Teste 4 */
+#teste-4 h3 {
+  margin: 2rem;
+}
+#result-array,
+#odd-array {
+  max-width: 90%;
+}
+#result-array div,
+#odd-array div {
+  display: inline-block;
+}
+
+/* Teste 5 */
+#teste-5 form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#teste-5 label {
+  margin: 1rem;
+}
+
+#teste-5 .button {
+  margin-top: 1rem;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+#list ul {
+  margin-top: 2rem;
+}
+#list li {
+  margin: 1rem;
+}
+
+#resum p {
+  margin: 1rem 0;
+}
+
+#resum p span {
+  font-weight: bold;
+}

@@ -1,0 +1,38 @@
+/*Teste 1*/
+.teste-1 h2 {
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 2rem;
+}
+
+#form-teste-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+#form-teste-1 label {
+  padding: 0.5rem 3rem;
+  background-color: transparent;
+
+  cursor: pointer;
+}
+
+/*Teste 2*/
+#teste-2 {
+  text-align: center;
+}
+#teste-2 .button-file {
+  margin-top: 1rem;
+}
+
+.result h2 {
+  margin: 2rem;
+}
+
+.result p {
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 0.3rem;
+}

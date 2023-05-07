@@ -1,0 +1,62 @@
+/* Teste 3 */
+#options {
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+#teste-3 h3 {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+#select {
+  border: 2px solid var(--cor-1);
+  border-radius: 5px;
+  width: 15rem;
+  height: 3rem;
+  max-width: 95%;
+  background-color: transparent;
+  color: white;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+#select option {
+  background-color: var(--cor-3);
+}
+
+.select label {
+  margin-right: 1rem;
+}
+
+.radio {
+  display: flex;
+  align-items: center;
+}
+
+.radio input {
+  width: 1rem;
+  margin: 0 0.5rem;
+  color: var(--cor-2);
+}
+
+table {
+  border-collapse: collapse;
+  width: 90%;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+table th,
+table td {
+  border: 1px solid black;
+  padding: 5px;
+  width: 24%;
+}
+
+table th {
+  background-color: transparent;
+  font-size: 1rem;
+  font-weight: 500;
+  width: 20rem;
+}

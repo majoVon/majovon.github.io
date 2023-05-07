@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DG Sys teste</title>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <nav>
+            <img src="./img/logo.png" alt="Logo DG SYS">
+
+            <div>
+                <ul>
+                    <li><a href="#etapa-1">Teste 1</a></li>
+                    <li><a href="#teste-2">Teste 2</a></li>
+                    <li><a href="#teste-3">Teste 3</a></li>
+                    <li><a href="#teste-4">Teste 4</a></li>
+                    <li><a href="#teste-5">Teste 5</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <main>
+            <!-- TESTE 1 -->
+            <div id="etapa-1" class="content-teste">
+                <h1>Etapa 1</h1>
+                <section class="teste-1 section">
+                    <h2>Enviar arquivo</h2>
+                    <form id="form-teste-1">
+                        <label id="label-input-file" for="fileCsv">Escoler arqivo
+                            <i class="bi bi-file-earmark-arrow-up-fill"></i>
+                        </label>
+                        <input type="file" id="fileCsv" name="fileCsv" onChange="file.setNameFileOnHtml(this.files)"
+                            accept="text/csv">
+                        <div class="button" onclick="file.getDatasFile()">Confirmar</div>
+                    </form>
+                </section>
+            </div>
+
+
+            <!-- TESTE 2 -->
+            <div class="content-teste">
+                <h1>Etapa 2</h1>
+                <section id="teste-2" class="section">
+                    <form>
+                        <input type="text" onkeyup="search.search()" name="input-search" id="input-search"
+                            placeholder="Pesquisar dados">
+                    </form>
+
+                    <div class="result">
+                        <h2>Resultado da busca:</h2>
+                        <div id="result"></div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- TESTE 3 -->
+            <div class="content-teste">
+                <h1>Etapa 3</h1>
+                <section id="teste-3" class="section">
+                    <div id="options">
+                        <section class="select">
+                            <h3 for="select">Ordernar por</h3>
+                            <select name="select" id="select" onchange="table.order()">
+                                <option value="nome">Nome</option>
+                                <option value="total-vendas">Total de vendas</option>
+                                <option value="preco">Preço</option>
+                            </select>
+                        </section>
+                        <section>
+                            <h3 for="input-radio">Ordem Crescente: </h3>
+                            <div class="radio">
+                                <input type="radio" name="input-radio" id="radio-yes" value="true" checked
+                                    onchange="table.getOrder()">
+                                <label for="radio-yes">Sim</label>
+                                <input type="radio" name="input-radio" id="radio-no" value="false"
+                                    onchange="table.getOrder()">
+                                <label for="radio-no">Não</label>
+                            </div>
+                        </section>
+                    </div>
+
+                    <section class="table">
+                        <table>
+                            <thead>
+                                <th>Nome</th>
+                                <th>Preço</th>
+                                <th>Total de vendas</th>
+                            </thead>
+
+                            <tbody id="tbody">
+
+                            </tbody>
+                        </table>
+                    </section>
+                </section>
+            </div>
+
+            <!-- TESTE 4 -->
+            <div class="content-teste">
+                <h1>Etapa 4</h1>
+                <section id="teste-4" class="section">
+                    <div class="button" onclick="array.generateRandomNumbers()">Gerar Números</div>
+
+                    <div>
+                        <h3>Números gerados: </h3>
+                    </div>
+                    <div id="result-array"></div>
+                    <h3>Números nas posições ímpares:</h3>
+                    <div id="odd-array"></div>
+                </section>
+            </div>
+
+            <!-- TESTE 5 -->
+            <div class="content-teste">
+                <h1>Etapa 5</h1>
+                <section id="teste-5" class="section">
+                    <form>
+                        <label for="input-value">Valor do financiamento:</label>
+                        <input type="number" name="input-value" id="input-value">
+                        <label for="input-value-month">Valor pago por mês:</label>
+                        <input type="number" name="input-value-monthe" id="input-value-month">
+                        <label for="input-value-rate">Percentual de jurus:</label>
+                        <input type="number" name="input-value-rate" id="input-value-rate">
+                    </form>
+                    <div class="button" onclick="financing.validateValues()">Confirmar</div>
+
+                    <section class="list">
+                        <ul id="list"></ul>
+
+                        <div id="resum">
+
+                        </div>
+                    </section>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <script src="./scripts/scripts.1-2.js"></script>
+    <script src="./scripts/scripts.3.js"></script>
+    <script src="./scripts/scripts.4.js"></script>
+    <script src="./scripts/scripts.5.js"></script>
+</body>
+
+</html>
