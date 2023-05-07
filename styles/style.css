@@ -46,7 +46,7 @@ nav {
   margin: auto;
   padding: 1rem;
   padding-left: 1rem;
-  background-color: #35393d8c;
+  background-color: #35393dce;
   position: fixed;
   width: 100%;
 }
@@ -158,5 +158,16 @@ input {
 
   #resultArray {
     width: 100%;
+  }
+
+  nav {
+    max-width: 100%;
+    padding: 1rem 0;
+  }
+  nav img {
+    display: none;
+  }
+  nav li {
+    text-align: center;
   }
 }
